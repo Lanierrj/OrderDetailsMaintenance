@@ -11,12 +11,13 @@ namespace OrderDetailsMaintenance
         {
             InitializeComponent();
         }
-
+        //Madelyn Lanier
         private void frmCustomerMaintenance_Load(object sender, EventArgs e)
         {
             _context = new NorthwindContext();
             customer = _context.Customers.First();
         }
+        //Madelyn Lanier
         private void btnSave_Click(object sender, EventArgs e)
         {
             customer.ContactName = txtContact.Text;
@@ -26,6 +27,7 @@ namespace OrderDetailsMaintenance
             _context.Customers.Update(customer);
             _context.SaveChanges();
         }
+        //Madelyn Lanier
         private void btnFind_Click(object sender, EventArgs e)
         {
             customerKey = txtCustomerId.Text;
