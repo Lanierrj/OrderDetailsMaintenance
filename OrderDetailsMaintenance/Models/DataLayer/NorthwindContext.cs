@@ -24,7 +24,6 @@ namespace OrderDetailsMaintenance.Models.DataLayer
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDBFilename=|DataDirectory|\\Northwind.mdf;Integrated security=True");
-                    //ConfigurationManager.ConnectionStrings["Northwind"].ConnectionString);
             }
         }
 

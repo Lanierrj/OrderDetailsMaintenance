@@ -15,7 +15,6 @@ namespace OrderDetailsMaintenance
         private void frmCustomerMaintenance_Load(object sender, EventArgs e)
         {
             _context = new NorthwindContext();
-            customer = _context.Customers.First();
         }
         //Madelyn Lanier
         private void btnSave_Click(object sender, EventArgs e)
